@@ -5,7 +5,7 @@ import java.io.IOException;
 public abstract class RTDEClientOfActualTCP extends RTDEClient {
 
     public RTDEClientOfActualTCP(int frequency) {
-        super("192.168.2.10", frequency, "Actual TCP");
+        super("127.0.0.1", frequency, "Actual TCP");
 
         addOutput(RTDEOutput.actual_TCP_pose);
         addOutput(RTDEOutput.actual_TCP_speed);
